@@ -11,10 +11,20 @@ function keyDownListener(e) {
   var buttons = document.getElementsByClassName(btnClass);
 
   if(keyCode==37) {
-	window.location = buttons[0].children[0].href;
+  	for(i in buttons){
+		if(buttons[i].children[0].innerHTML == "&lt;&lt;"){
+			window.location = buttons[i].children[0].href;
+			break;
+		}
+	}
   } 
   if(keyCode==39 || keyCode==32) {
-	window.location = buttons[2].children[0].href;
+  	for(i in buttons){
+		if(buttons[i].children[0].innerHTML == "&gt;&gt;"){
+			window.location = buttons[i].children[0].href;
+			break;
+		}
+	}
   }
 }
 
