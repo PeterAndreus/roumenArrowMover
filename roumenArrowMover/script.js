@@ -18,6 +18,9 @@ function keyDownListener(e) {
 		}
 	}
   } 
+  if(keyCode==77) {
+  	var v=document.getElementsByTagName('video')[0]; v.muted=!v.muted;
+  } 
   if(keyCode==39 || keyCode==32) {
   	for(i in buttons){
 		if(buttons[i].children[0].innerHTML == "&gt;&gt;"){
