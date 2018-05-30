@@ -4,8 +4,8 @@
 "version":"1.1",
 "description":"Moving to next and previous picture",
 "content_scripts":[{
-  "matches":["http://www.rouming.cz/*",
-	     "http://www.roumenovomaso.cz/*"],
+  "matches":["https://www.rouming.cz/*",
+	     "https://www.roumenovomaso.cz/*"],
   "js":["script.js"],
   "run_at" : "document_end"
   }],
